@@ -1,0 +1,20 @@
+const lodash  = require('lodash')
+let obj1 = {prop1: 'hola', prop2:3, prop3: {a:1,b:2}}
+let obj2 = obj1
+
+obj1
+obj2
+
+obj2.prop1 = 'Hola mundo'
+obj1
+let obj3 = lodash.cloneDeep(obj1)
+//obj3
+
+obj3.prop1 = 'DAVID GARCIA'
+//obj3
+
+obj3.prop3.b =  6
+console.log('---obj3')
+obj3
+console.log('-- obj1')
+obj1
